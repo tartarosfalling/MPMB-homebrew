@@ -34,7 +34,7 @@ RaceList["siren"] = {
    
     scores : [0, 0, 0, 0, 0, 2],
 
-    trait : "Siren (+2 Charisma)\nAmphibious:\n    I can breathe both air and water with equal ease.\nEmissary of the Sea:\n    I can communicate simple ideas to beasts that can breathe water. They can understand the meaning of my words, though I have no special ability to understand them in return.\n Siren Song:\n    I can innately cast the following spells, requiring no material components: charm, invisibility, stupefying touch\nElemental Touch:\n    I know Fog Cloud. Once I reach 3rd level, I can Gust of Wind with it. Once I reach 5th level, I can cast Wall of Water with it."
+    trait : "Siren (+2 Charisma)\nAmphibious:\n    I can breathe both air and water with equal ease.\nEmissary of the Sea:\n    I can communicate simple ideas to beasts that can breathe water. They can understand the meaning of my words, though I have no special ability to understand them in return.\n Siren Song:\n    I can innately cast the following spells, requiring no material components: charm, invisibility, stupefying touch\nElemental Touch:\n    I know Fog Cloud. Once I reach 3rd level, I can Gust of Wind with it. Once I reach 5th level, I can cast Wall of Water with it.",
 	
     abilitySave : 6,
  
