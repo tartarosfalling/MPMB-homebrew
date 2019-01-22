@@ -33,7 +33,7 @@ RaceList["siren"] = {
    
     scores : [0, 0, 0, 0, 0, 2],
 
-    trait : "Siren (+2 Charisma)\nAmphibious: I can breathe both air and water with equal ease.\nEmissary of the Sea:\n    I can communicate simple ideas to beasts that can breathe water. They can understand the meaning of my words, though I have no special ability to understand them in return.\nSiren Song:\n    I can innately cast the following spells, requiring no material components: charm, invisibility, stupefying touch\nElemental Touch:\n    I can innately cast Fog Cloud. Once I reach 3rd level, I can cast Gust of Wind with it. Once I reach 5th level, I can cast Wall of Water with it.",
+    trait : "Siren (+2 Charisma)\nAmphibious: I can breathe both air and water with equal ease.\nTrance: Sirens don't need to sleep, but meditate semiconsciously, for 4 hours a day. While meditating, I can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, I gain the same benefit that a human does from 8 hours of sleep, thus needing only 4 hours for a long rest.\nEmissary of the Sea: I can communicate simple ideas to beasts that can breathe water. They can understand the meaning of my words, though I have no special ability to understand them in return.\nSiren Song: I can innately cast the following spells, requiring no material components: charm, invisibility, stupefying touch, unearthly chorus.\nElemental Touch: I can innately cast Fog Cloud. Once I reach 3rd level, I can cast Gust of Wind with it. Once I reach 5th level, I can cast Wall of Water with it.",
 	
     abilitySave : 6,
  
@@ -49,9 +49,7 @@ RaceList["siren"] = {
       
 		  spells : ["charm person", "invisibility", "stupefying touch"], //Optional, but required if not including the "class" entry; If a "spells" array is present, all other objects will be ignored and only this list of spells will populate the list of available spells. each entry has to match the name of the spell in the SpellsList
 		
-		  // times : 3, 
-      		  //optional; this is the number of times the bonus spells should be added. //This can also be an array of 20 values. That way the number of times are level-dependent
-		
+		  times : 3, 
 		  prepared : true, 
 		
 		  atwill : true, 
@@ -59,14 +57,29 @@ RaceList["siren"] = {
 		  },
       
     features : { 
-    
+    		"unearthly chorus" : {
+		
+			name : "unearthly chorus", 
+			minlevel : 1, 
+			usages : 1, 
+     			components: "",
+      			prepared : true, 
+			recovery : "long rest", 
+			tooltip : "Siren Song (lr)",
+			spellcastingBonus : { 
+				name : "Siren Song (lr)",
+				spells : ["unearthly chorus"],
+				selection : ["unearthly chorus"],
+       			 oncelr : true, },
+			},
+
 		"fog cloud" : {
 		
 			name : "fog cloud", 
 			minlevel : 1, 
 			usages : 1, 
-     	components: "",
-      prepared : true, 
+     			components: "",
+      			prepared : true, 
 			recovery : "long rest", 
 			tooltip : "Elemental Touch (level 1)",
 			spellcastingBonus : { 
