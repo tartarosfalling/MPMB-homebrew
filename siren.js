@@ -47,13 +47,11 @@ RaceList["siren"] = {
 		
 		  ritual : false, 
       
-		  spells : ["charm person", "invisibility", "stupefying touch"], //Optional, but required if not including the "class" entry; If a "spells" array is present, all other objects will be ignored and only this list of spells will populate the list of available spells. each entry has to match the name of the spell in the SpellsList
-		
+		  spells : ["charm person", "invisibility", "stupefying touch"], 
 		  times : 3, 
 		  prepared : true, 
-		
 		  atwill : true, 
-		  action: ["action",]
+		  fixedDC : 18,
 		  },
       
     features : { 
@@ -62,15 +60,17 @@ RaceList["siren"] = {
 			name : "unearthly chorus", 
 			minlevel : 1, 
 			usages : 1, 
-     			components: "",
-      			prepared : true, 
 			recovery : "long rest", 
 			tooltip : "Siren Song (lr)",
+               
 			spellcastingBonus : { 
 				name : "Siren Song (lr)",
 				spells : ["unearthly chorus"],
-				selection : ["unearthly chorus"],
-       			 oncelr : true, },
+				prepared : true,
+				oncelr : true, 
+				fixedDC : 18,
+
+				},
 			},
 
 		"fog cloud" : {
@@ -78,15 +78,15 @@ RaceList["siren"] = {
 			name : "fog cloud", 
 			minlevel : 1, 
 			usages : 1, 
-     			components: "",
-      			prepared : true, 
 			recovery : "long rest", 
 			tooltip : "Elemental Touch (level 1)",
 			spellcastingBonus : { 
 				name : "Elemental Touch (level 1)",
 				spells : ["fog cloud"],
-				selection : ["fog cloud"],
-       			 oncelr : true, },
+				prepared : true,
+				oncelr : true, 
+				fixedDC : 18,
+			},
 			},
     
     "gust of wind" : { 
@@ -94,14 +94,15 @@ RaceList["siren"] = {
 			name : "gust of wind", 
 			minlevel : 3, 
 			usages : 1, 
-      			prepared : true,
 			recovery : "long rest", 
 			tooltip : "Elemental Touch (level 3)",
 			spellcastingBonus : { 
 				name : "Elemental Touch (level 3)",
 				spells : ["gust of wind"],
-				selection : ["gust of wind"],
-        oncelr : true, },
+				prepared : true,
+				oncelr : true, 
+			  fixedDC : 18, 
+      },
 			},
     
      "wall of water" : { 
@@ -116,7 +117,10 @@ RaceList["siren"] = {
 				name : "Elemental Touch (level 5)",
 				spells : ["wall of water"],
 				selection : ["wall of water"],
-        		oncelr : true, },
+				prepared : true,
+				oncelr : true, 
+				fixedDC : 18,
+			 },
 			},
   }
   
