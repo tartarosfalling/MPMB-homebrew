@@ -26,6 +26,4 @@ SpellsList["stupefying touch"] = {
 	firstCol : "atwill", 
 	
 	dependencies : [], //Optional; An array of spells (SpellsList object names) that will be put in the rows below this spell when this spell is added to the spell sheet
-	
-	psionic : true, //Optional; If you set this to true, the sheet will treat this spell as a psionic talent/discipline
-};
+	};
